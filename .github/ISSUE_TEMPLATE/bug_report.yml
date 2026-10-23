@@ -1,0 +1,77 @@
+name: Bug report
+description: Something in IntegrationClient doesn't work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! This repository is **public**, so remove secrets, tokens, real hostnames and personal data from anything you paste.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: IntegrationClient version, e.g. from the file you downloaded
+      placeholder: e.g. 1.4.2
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows (portable)
+        - Linux (AppImage)
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: service-type
+    attributes:
+      label: Service type
+      description: What kind of service were you running?
+      options:
+        - REST
+        - REST with OAuth2
+        - GraphQL
+        - SOAP
+        - External program
+        - Not related to a service (UI, config editor, …)
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, and what went wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Select service …
+        2. Load indata …
+        3. Click Run
+        4. …
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log output
+      description: From the LOGS tab. Normal view is usually enough; check Debug logs for secrets and personal data before pasting.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have searched existing issues
+          required: true
+        - label: I have removed secrets, tokens, real hostnames and personal data
+          required: true
