@@ -2,7 +2,7 @@
 
 A desktop tool for testing REST, SOAP and external program integrations.
 
-This is the public home of IntegrationClient: downloads (see [Releases](../../releases)), bug reports, feature requests and discussions. The source code is private.
+This is the public home of IntegrationClient: downloads (see [Releases](../../releases)), bug reports, feature requests and discussions. The source code is private for now; I plan to publish it here later.
 
 The "Source code (zip / tar.gz)" files on each release are added by GitHub automatically. They contain this repository's files (this README and the issue forms), not IntegrationClient's source code.
 
