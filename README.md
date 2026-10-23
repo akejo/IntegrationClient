@@ -6,13 +6,24 @@ This is the public home of IntegrationClient: downloads (see [Releases](../../re
 
 The "Source code (zip / tar.gz)" files on each release are added by GitHub automatically. They contain this repository's files (this README and the issue forms), not IntegrationClient's source code.
 
+## Download
+
+Get the latest version from [Releases](../../releases/latest):
+
+- **Windows:** `integrationclient-x.y.z-windows.zip`. Unzip it and run `integrationclient.exe`.
+- **Linux:** `integrationclient-x.y.z-linux.tgz`. Unpack it and run `./integrationclient`.
+
+Windows may warn about an unknown app the first time: click **More info → Run anyway** if you trust the source.
+
+The download includes an example `config.json` with public demo services, so you can try it right away.
+
 ## Reporting a bug or asking for a feature
 
 - **Bug:** [open a bug report](../../issues/new?template=bug_report.yml)
 - **Idea or improvement:** [open a feature request](../../issues/new?template=feature_request.yml)
 - **Question or "how do I…":** ask in [Discussions](../../discussions)
 
-Please search existing issues first, your problem may already be known.
+Please search existing issues first; your problem may already be known.
 
 ## Keep secrets out
 
